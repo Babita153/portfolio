@@ -128,7 +128,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  /* gap: 40px; */
   padding: 80px 5%;
   background: #f8f9ff;
   min-height: 65vh;
@@ -137,6 +137,7 @@ img {
 .hero-left {
   flex: 1 1 500px;
   max-width: 600px;
+  align-content: center;
 }
 
 .hero-left h1 {
@@ -470,7 +471,7 @@ img {
   object-fit: contain;
 
   background: transparent;
-  border-radius: 55px;
+  border-radius: 50px;
 }
 
 .footer-social img:hover {
