@@ -1,86 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Babita Mittal Portfolio</title>
+  <title>Babita Portfolio</title>
 
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
+  <!-- ================= NAVBAR ================= -->
   <header class="navbar">
-    <h2 class="logo">Portfolio</h2>
-
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <div class="logo">
+      Portfolio
+    </div>
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
     </nav>
-
-    <a href="resume.pdf" download class="btn">Download Resume</a>
   </header>
 
-  <!-- HERO 1 -->
-  <section class="hero">
-    <div class="hero-left">
-      <h1>PORTFOLIO</h1>
-      <h2>Babita</h2>
-      <p class="role">React Native Developer / Frontend Developer</p>
+  <!-- ================= HERO ================= -->
 
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/babita-mittal-606963274/" target="_blank">
-          <img src="images/linkedin.png" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/Babita153" target="_blank">
-          <img src="images/github.png" alt="GitHub" />
-        </a>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h3>
+          Hello, I'm
+          <span>Babita</span>
+        </h3>
+        <p>
+          I'm a passionate React Native Developer specializing
+          in cross-platform mobile application development.
+
+          I enjoy creating beautiful user interfaces,
+          scalable solutions and real-world products using
+          React Native, Firebase, Node.js and modern web technologies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="primary-btn">
+            View Projects →
+          </a>
+          <a href="#contact" class="secondary-btn">
+            Let's Connect
+          </a>
+        </div>
+
       </div>
-    </div>
-
-    <div class="hero-right">
-      <img src="images/visual.png" alt="Portfolio Visual" />
+      <div class="hero-image">
+        <img src="images/profile.png" alt="Babita" />
+      </div>
     </div>
   </section>
 
-  <!-- HERO 2 / HOME -->
-  <section id="home" class="hero">
-    <div class="hero-left">
-      <span class="tag">👋 Hi, I'm</span>
-      <h1>Babita</h1>
-      <h2>React Native Developer / Frontend Developer</h2>
+  <!-- ================= ABOUT ================= -->
 
-      <p>
-        Enthusiastic Computer Science student with hands-on experience
-        in building cross-platform mobile applications using React Native,
-        Firebase and modern technologies.
-      </p>
-
-      <div class="buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="#contact" class="btn-outline">Contact Me</a>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <img src="images/profile.png" alt="Babita profile" />
-    </div>
-  </section>
-
-  <!-- ABOUT -->
   <section id="about" class="section">
     <h2 class="section-title">About Me</h2>
 
     <p class="about-text">
-      I am a Computer Science student with hands-on experience in building mobile applications using React Native and Firebase.
+      I am a final year Computer Science student with hands-on experience in building mobile applications using React
+      Native and Firebase.
       I worked on real projects where I developed user-friendly and responsive applications.
       <br /><br />
-      I have built projects like a food delivery app (SnapEats) and an expense tracker, where I implemented features such as authentication,
-      API integration, and smooth navigation. These projects helped me understand how to create practical solutions for real-world problems.
+      I have built projects like a food delivery app (SnapEats) and an expense tracker, where I implemented features
+      such as authentication,
+      API integration, and smooth navigation. These projects helped me understand how to create practical solutions for
+      real-world problems.
       <br /><br />
       Apart from technical skills, I have experience in event management and teamwork through college activities,
       which improved my communication and collaboration skills.
@@ -104,6 +100,12 @@
         <h4>University 5th Position</h4>
         <p>Kurukshetra University</p>
       </div>
+    </div>
+
+    <div class="resume-container">
+      <a href="Babita_Resume.pdf" download class="resume-btn">
+        Download Resume
+      </a>
     </div>
   </section>
 
@@ -144,93 +146,89 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- ================= PROJECTS ================= -->
+
   <section id="projects" class="section">
     <h2 class="section-title">My Projects</h2>
+    <div class="projects-container">
 
-    <section class="project-section">
+      <!-- Project 1 -->
       <div class="project-card">
-        <img src="images/expense.png" alt="SmartSpend Expense Tracker" />
 
-        <div class="project-info">
-          <h3>SmartSpend – Expense Tracker</h3>
+        <div class="project-image">
+          <img src="images/snapeats.png" alt="SnapEats">
+        </div>
+
+        <div class="project-content">
+          <h3>SnapEats</h3>
+
           <p>
-            A cross-platform expense tracking app that helps users manage income,
-            expenses and save more efficiently.
+            Food Delivery App built using React Native,
+            Firebase and Node.js.
           </p>
 
-          <ul>
-            <li>Add to Cart & place orders</li>
-            <li>Order history and tracking</li>
-            <li>API integration and management</li>
-          </ul>
+          <div class="tech-stack">
+            <span>React Native</span>
+            <span>Firebase</span>
+            <span>Node.js</span>
+          </div>
 
-          <a href="https://github.com/Babita153/snapeats" target="_blank">View Project</a>
+          <a href="https://github.com/Babita153" target="_blank">
+            View Project →
+          </a>
         </div>
+
       </div>
-    </section>
 
-    <section class="project-showcase">
-      <img src="images/expense2.png" alt="Expense app showcase" />
-    </section>
-
-    <section class="project-section">
+      <!-- Project 2 -->
       <div class="project-card">
-        <img src="images/snapeats.png" alt="SnapEats Food Delivery App" />
 
-        <div class="project-info">
-          <h3>SnapEats – Food Delivery App</h3>
+        <div class="project-image">
+          <img src="images/expense.png" alt="Expense Tracker">
+        </div>
+
+        <div class="project-content">
+          <h3>SmartSpend</h3>
+
           <p>
-            A food delivery application that allows users to explore restaurants,
-            add items to cart and place orders.
+            Expense Tracker with income, expense
+            management and analytics.
           </p>
 
-          <ul>
-            <li>Add to Cart & place orders</li>
-            <li>Order history and tracking</li>
-            <li>API integration and management</li>
-          </ul>
+          <div class="tech-stack">
+            <span>React Native</span>
+            <span>API</span>
+            <span>Firebase</span>
+          </div>
 
-          <a href="https://github.com/Babita153/snapeats" target="_blank">View Project</a>
+          <a href="https://github.com/Babita153" target="_blank">
+            View Project →
+          </a>
         </div>
-      </div>
-    </section>
 
-    <section class="project-showcase">
-      <img src="images/food.png" alt="Food app showcase" />
-    </section>
-  </section>
-
-  <!-- GALLERY / PHONE CARDS -->
-  <section class="projects">
-    <h2 class="section-title">PROJECTS</h2>
-
-    <div class="project-row">
-      <div class="phone-card">
-        <img src="images/image1.png" alt="Project 1" />
       </div>
 
-      <div class="phone-card">
-        <img src="images/image2.png" alt="Project 2" />
-      </div>
-
-      <div class="phone-card">
-        <img src="images/image3.png" alt="Project 3" />
-      </div>
-
-      <div class="phone-card">
-        <img src="images/image4.png" alt="Project 4" />
-      </div>
-
-      <div class="phone-card">
-        <img src="images/image5.png" alt="Project 5" />
-      </div>
-
-      <div class="phone-card">
-        <img src="images/image6.png" alt="Project 6" />
-      </div>
     </div>
   </section>
+
+  <section class="showcase-section">
+
+    <h2 class="section-title">Project Showcase</h2>
+
+    <div class="showcase-image">
+      <img src="./images/expense2.png">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="showcase-image">
+      <img src="./images/food.png">
+    </div>
+  </section>
+
 
   <!-- CONTACT -->
   <section id="contact" class="section contact">
@@ -238,7 +236,7 @@
 
     <div class="contact-box">
       <p>📞 Phone <br />+91 9034100895</p>
-      <p>📧 Email <br />ashikamittal11@gmail.com</p>
+      <p>📧 Email <br />babitamittal576@gmail.com</p>
     </div>
   </section>
 
@@ -255,30 +253,10 @@
       </div>
 
       <div class="footer-col">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#home">➤ Home</a></li>
-          <li><a href="#about">➤ About</a></li>
-          <li><a href="#skills">➤ Skills</a></li>
-          <li><a href="#projects">➤ Projects</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
         <h3>Contact Info</h3>
         <p>📞 +91 9034100895</p>
-        <p>📧 ashikamittal11@gmail.com</p>
+        <p>📧 babitamittal576@gmail.com</p>
         <p>📍 Haryana, India</p>
-
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/babita-mittal-606963274/" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedIn" />
-          </a>
-
-          <a href="https://github.com/Babita153" target="_blank">
-            <img src="images/github.png" alt="GitHub" />
-          </a>
-        </div>
       </div>
     </div>
 
@@ -287,6 +265,21 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+
+    const hamburger =
+      document.getElementById("hamburger");
+
+    const navMenu =
+      document.getElementById("navMenu");
+
+    hamburger.addEventListener("click", () => {
+
+      navMenu.classList.toggle("active");
+
+    });
+
+  </script>
 </body>
+
 </html>
